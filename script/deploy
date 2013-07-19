@@ -1,0 +1,14 @@
+#!/bin/bash
+
+case "$ENVIRONMENT" in
+    "production")
+        APP="r101-foosball";;
+    "staging")
+        APP="r101-foosball-staging";;
+esac
+
+echo "Deploying $BRANCH to $APP ..."
+
+export
+
+git push "git@heroku.com:${APP}.git" HEAD:master

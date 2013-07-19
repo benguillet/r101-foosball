@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.0.0
+script: bundle exec rake
+notifications:
+  email: false
+  hipchat:
+   - secure: "aQePin3VJWYzt2PPM2L6kcpAKFago6zaeWvtkv1gRyi9SvAwzXyYGw5rgd31\nlghuPmdY/Mpgf0kFfuSWnHQyDLLzvy+q/3Y/PkYTVM0ACvIwPotRTRni1YnN\nF1IHDMuQu1YkdhIIljrz272WlOVRdMuFjUgfiR7gkJGqOfk9650="
