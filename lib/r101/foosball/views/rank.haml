@@ -5,5 +5,11 @@
     %link{ rel: 'stylesheet', href: '/assets/app.css' }
   %body
     .container
+    %table
+      %tr
+        %th Nickname
+        %th Score
       - @players.each do |player|
-        %p="#{player.nickname} - #{player.score}"
+        %tr
+          %td= player.nickname
+          %td= player.score

@@ -4,7 +4,7 @@ class Seed
 
   def self.create_rows
     csv_file = File.expand_path('../../config/team.csv', __FILE__)
-    CSV.foreach(csv_file, :headers => true) do |row|
+    CSV.foreach(csv_file, col_sep: ', ', headers: true) do |row|
         begin
           Player.create!(
           :first_name => row[0],

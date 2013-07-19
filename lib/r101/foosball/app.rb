@@ -11,12 +11,13 @@ module R101
       end
 
       get '/rank' do
-        @players = Player.find(:all, order: 'score DESC')
+        @players = Player.all(order: 'score DESC')
         haml :rank
       end
 
-      put 'players/:id' do
-
+      put '/players/:id' do
+         player = Player.find_by_id(params[:id].to_i)
+         player.increment!(:score)
       end
 
     end
