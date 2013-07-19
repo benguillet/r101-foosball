@@ -1,0 +1,11 @@
+!!! 5
+%html
+  %head
+    %title R101 Foosball Leaderboard!
+    %link{ rel: 'stylesheet', href: '/stylesheets/index.css' }
+  %body
+    .container
+      %ul
+        - @players.each do |player|
+          %li=player.nickname
+          %li=player.first_name

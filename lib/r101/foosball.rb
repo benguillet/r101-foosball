@@ -1,6 +1,8 @@
 require 'sinatra/activerecord'
 require 'active_support'
 require 'active_support/core_ext'
+require 'haml'
+require 'sass'
 
 require File.expand_path('../foosball/models/player', __FILE__)
 
