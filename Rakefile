@@ -1,6 +1,6 @@
 #!/usr/bin/env rake
-
 require File.expand_path('../config/environment', __FILE__)
+require 'sinatra/activerecord/rake'
 require 'rspec/core/rake_task'
 
 task :default => :spec

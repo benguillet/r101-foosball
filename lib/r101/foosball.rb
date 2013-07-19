@@ -1,5 +1,8 @@
+require 'sinatra/activerecord'
 require 'active_support'
 require 'active_support/core_ext'
+
+autoload :Player, 'r101/foosball/models/player'
 
 module R101
   module Foosball
