@@ -1,8 +1,11 @@
 require File.expand_path('../config/environment', __FILE__)
-require 'sass/plugin/rack'
+require 'sprockets'
 
-# use scss for stylesheets
-Sass::Plugin.options[:style] = :compressed
-use Sass::Plugin::Rack
+map '/assets' do
+  environment = Sprockets::Environment.new
+  environment.append_path 'lib/r101/foosball/assets/javascripts'
+  environment.append_path 'lib/r101/foosball/assets/stylesheets'
+  run environment
+end
 
 run R101::Foosball.app
