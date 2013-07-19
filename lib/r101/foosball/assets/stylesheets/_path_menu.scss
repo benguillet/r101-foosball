@@ -3,13 +3,13 @@
 @import "path_menu_layout";
 
 // ============== Vars =====================
-$items: 6; // number of items
-$arc: 90;  // arc of the circle
+$items: 12; // number of items
+$arc: 360;  // arc of the circle
 $angle: $arc/$items;  // angle between items
 $space:170; // a value in pixel. It's the space between the red circle and the items
 $circleCenterX: 30;  // the X coord of the red  circle center
 $circleCenterY: 30;  // the Y coord of the red  circle center
-$disappearDelay: 50;
+$disappearDelay: 30;
 
 // Generate items position + keyframes animation
 @for $i from 1 through $items {
@@ -26,7 +26,7 @@ $disappearDelay: 50;
 
     // CSS checkbox + label tricks
     #menu:checked ~ .items li:nth-child(#{$i}) {
-        @include animation-name(appear-#{$i});
+        @include  animation-name(appear-#{$i});
         @include  animation-duration(240ms);
         @include  animation-iteration-count(1);
         @include  animation-fill-mode(forwards);

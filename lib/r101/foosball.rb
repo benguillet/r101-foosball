@@ -1,4 +1,5 @@
 require 'sinatra/activerecord'
+require 'sinatra/static_assets'
 require 'active_support'
 require 'active_support/core_ext'
 require 'compass'

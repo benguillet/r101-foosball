@@ -5,11 +5,6 @@
     %link{ rel: 'stylesheet', href: '/assets/app.css' }
   %body
     .container
-      %ul
-        - @players.each do |player|
-          %li=player.nickname
-          %li=player.first_name
-
       %input{ type: "checkbox", id: "menu", class: "menuControl", checked: "checked" }
         %label{ for: "menu" }
           %div{ class: "circle-container" }
@@ -17,10 +12,16 @@
               &#10006;
 
         %ul{ class: "items" }
-          %li &#9733;
-          %li &#9733;
-          %li &#9733;
-          %li &#9733;
-          %li &#9733;
-          %li &#9733;
+          %li=image_tag '/assets/team/team_ben_g.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_ben_m.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_eric.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_aditya.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_brett.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_david.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_rex.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_jordan_d.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_jordan_s.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_lindsay.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_max.jpg', width: '76px', height: '76px'
+          %li=image_tag '/assets/team/team_rex.jpg', width: '76px', height: '76px'
 

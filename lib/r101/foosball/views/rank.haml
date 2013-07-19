@@ -1,0 +1,9 @@
+!!! 5
+%html
+  %head
+    %title R101 Foosball Leaderboard!
+    %link{ rel: 'stylesheet', href: '/assets/app.css' }
+  %body
+    .container
+      - @players.each do |player|
+        %p="#{player.nickname} - #{player.score}"

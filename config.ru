@@ -7,6 +7,7 @@ map '/assets' do
   environment = Sprockets::Environment.new
   environment.append_path 'lib/r101/foosball/assets/javascripts'
   environment.append_path 'lib/r101/foosball/assets/stylesheets'
+  environment.append_path 'lib/r101/foosball/assets/images'
   run environment
 end
 

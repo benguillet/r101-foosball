@@ -2,6 +2,7 @@
 .env
 tmp/
 log/
+.sass-cache
 
 *.gem
 *.rbc

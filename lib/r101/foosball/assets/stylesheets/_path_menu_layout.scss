@@ -1,23 +1,30 @@
 // Red button
 .circle-container {
-    position:fixed;bottom:10px;left:10px;height:40px;width:40px;
+    position: fixed;
+    bottom: 50%;
+    left: 40%;
+    height: 80px;
+    width: 80px;
     @include box-shadow(0 0 10px rgba(0,0,0,0.7));
-    @include border-radius(20px);
+    @include border-radius(40px);
     .circle {
-        position:fixed;bottom:10px;left:10px;
-        height:40px;width:40px;
+        position: fixed;
+        bottom: 50%;
+        left: 40%;
+        height: 80px;
+        width: 80px;
         cursor:pointer;
-        z-index:2;
-        border:0px;
-        font-size:30px;
-        line-height:40px;
-        text-align:center;
-        color:white;
-        padding:0px;
+        z-index: 2;
+        border: 0px;
+        font-size: 30px;
+        line-height: 80px;
+        text-align: center;
+        color: white;
+        padding: 0px;
         @include transition(all .2s linear);
         @include background-image(linear-gradient(#e85738, #cb2c16));
         @include box-shadow(0 0 0 4px white, 0 0 0 5px rgba(0,0,0,0.3));
-        @include border-radius(20px);
+        @include border-radius(40px);
         @include transform-style(preserve-3d);
         @include appearance(none);
         @include transform(rotate(45deg));
@@ -36,16 +43,18 @@
 // Items
 .items li {
     position:fixed;
-    z-index:-1;
-    bottom:20px;left:20px;
-    display:block;
-    height:26px;width:26px;
-    color:white;
-    text-align:center;
-    line-height:26px;
-    font-size:18px;
+    z-index: -1;
+    bottom: 50%;
+    left: 40%;
+    display: block;
+    height: 52px;
+    width: 52px;
+    color: white;
+    text-align: center;
+    line-height: 52px;
+    font-size: 18px;
     @include box-shadow(0 0 0 4px white, 0 0 0 5px rgba(0,0,0,0.3), inset 0 0 1px black);
     @include background-image(linear-gradient(#433f3c, #44403d));
-    @include border-radius(13px);
+    @include border-radius(26px);
     @include transform-style(preserve-3d);
 }
