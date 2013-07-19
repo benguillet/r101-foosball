@@ -16,3 +16,13 @@ task :console do
   ARGV.clear
   IRB.start
 end
+
+task :tasks do
+  require File.expand_path(File.join(*%w[ task seed ]), File.dirname(__FILE__))
+end
+
+namespace :player do
+  task :seed => :tasks do
+    Seed.create_rows
+  end
+end

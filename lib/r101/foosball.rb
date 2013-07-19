@@ -2,7 +2,7 @@ require 'sinatra/activerecord'
 require 'active_support'
 require 'active_support/core_ext'
 
-autoload :Player, 'r101/foosball/models/player'
+require File.expand_path('../foosball/models/player', __FILE__)
 
 module R101
   module Foosball
