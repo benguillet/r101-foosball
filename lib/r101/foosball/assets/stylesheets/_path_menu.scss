@@ -1,4 +1,5 @@
-@import "compass";
+@import "compass/reset";
+@import "compass/css3";
 @import "path_menu_layout";
 
 // ============== Vars =====================
@@ -25,7 +26,7 @@ $disappearDelay: 50;
 
     // CSS checkbox + label tricks
     #menu:checked ~ .items li:nth-child(#{$i}) {
-        @include  animation-name(appear-#{$i});
+        @include animation-name(appear-#{$i});
         @include  animation-duration(240ms);
         @include  animation-iteration-count(1);
         @include  animation-fill-mode(forwards);

@@ -11,8 +11,8 @@ gem 'sinatra-activerecord', '~> 1.2.3'
 gem 'pg',                   '~> 0.15.1'
 gem 'haml',                 '~> 4.0.3'
 gem 'sass',                 '~> 3.2.9'
-gem 'sprockets',            '~> 2.10.0'
-gem 'compass'
+gem 'compass',              '~> 0.13.alpha.0'
+gem 'sprockets-sass',       '~> 1.0.1'
 
 group :development, :test do
   gem 'foreman',            '~> 0.62.0'
