@@ -1,5 +1,6 @@
 require File.expand_path('../config/environment', __FILE__)
 require 'sprockets'
+require 'compass'
 
 map '/assets' do
   environment = Sprockets::Environment.new

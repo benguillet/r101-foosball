@@ -2,6 +2,7 @@
 %html
   %head
     %title R101 Foosball Leaderboard!
+    %link{ rel: 'stylesheet', href: '/assets/path_menu.css' }
     %link{ rel: 'stylesheet', href: '/assets/index.css' }
   %body
     .container
@@ -9,3 +10,18 @@
         - @players.each do |player|
           %li=player.nickname
           %li=player.first_name
+
+      %input{ type: "checkbox", id: "menu", class: "menuControl", checked: "checked" }
+        %label{ for: "menu" }
+          %div{ class: "circle-container" }
+            %button{ class: "circle" }
+              &#10006;
+
+        %ul{ class: "items" }
+          %li &#9733;
+          %li &#9733;
+          %li &#9733;
+          %li &#9733;
+          %li &#9733;
+          %li &#9733;
+

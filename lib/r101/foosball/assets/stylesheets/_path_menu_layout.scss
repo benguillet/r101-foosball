@@ -1,0 +1,51 @@
+// Red button
+.circle-container {
+    position:fixed;bottom:10px;left:10px;height:40px;width:40px;
+    @include box-shadow(0 0 10px rgba(0,0,0,0.7));
+    @include border-radius(20px);
+    .circle {
+        position:fixed;bottom:10px;left:10px;
+        height:40px;width:40px;
+        cursor:pointer;
+        z-index:2;
+        border:0px;
+        font-size:30px;
+        line-height:40px;
+        text-align:center;
+        color:white;
+        padding:0px;
+        @include transition(all .2s linear);
+        @include background-image(linear-gradient(#e85738, #cb2c16));
+        @include box-shadow(0 0 0 4px white, 0 0 0 5px rgba(0,0,0,0.3));
+        @include border-radius(20px);
+        @include transform-style(preserve-3d);
+        @include appearance(none);
+        @include transform(rotate(45deg));
+        &:active:before{
+           content:"";
+           display:block;
+           position:absolute;
+           top:-5px;left:-5px;right:-5px;bottom:-5px;
+           background:rgba(0,0,0,0.3);
+           pointer-events:none;
+           @include border-radius(25px);
+        }
+    }
+}
+
+// Items
+.items li {
+    position:fixed;
+    z-index:-1;
+    bottom:20px;left:20px;
+    display:block;
+    height:26px;width:26px;
+    color:white;
+    text-align:center;
+    line-height:26px;
+    font-size:18px;
+    @include box-shadow(0 0 0 4px white, 0 0 0 5px rgba(0,0,0,0.3), inset 0 0 1px black);
+    @include background-image(linear-gradient(#433f3c, #44403d));
+    @include border-radius(13px);
+    @include transform-style(preserve-3d);
+}

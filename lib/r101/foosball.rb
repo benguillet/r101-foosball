@@ -1,6 +1,7 @@
 require 'sinatra/activerecord'
 require 'active_support'
 require 'active_support/core_ext'
+require 'compass'
 require 'haml'
 require 'sass'
 
