@@ -1,15 +1,9 @@
-!!! 5
-%html
-  %head
-    %title R101 Foosball Leaderboard!
-    %link{ rel: 'stylesheet', href: '/assets/app.css' }
-  %body
-    .container
-    %table
-      %tr
-        %th Nickname
-        %th Score
-      - @players.each do |player|
-        %tr
-          %td= player.nickname
-          %td= player.score
+.container
+%table
+  %tr
+    %th Nickname
+    %th Score
+  - @players.each do |player|
+    %tr
+      %td= player.nickname
+      %td= player.score
