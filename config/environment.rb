@@ -10,5 +10,7 @@ rescue LoadError
   # We don't need dotenv on production
 end
 
+require File.expand_path('../environments', __FILE__)
+
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'r101-foosball'

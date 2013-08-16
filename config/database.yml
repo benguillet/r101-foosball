@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  host: localhost
+  username: benjaminguillet
+  database: r101_foosball_development
+  encoding: utf8
